@@ -55,8 +55,15 @@ export class AppComponent implements OnInit {
   ]`)
 
   
-    jexcel(document.getElementById("spreadsheet"), {
-      data: [{
+  jexcel(document.getElementById("spreadsheet"), {
+    
+    // url:'src/assets/user.json',
+
+    search: true,//Adds a global Search
+  
+    pagination: 10, //Pagination
+
+    data: [{
         "name":"Aashiq",
         "role":"Dev",
         "age":21,
@@ -73,12 +80,12 @@ export class AppComponent implements OnInit {
         "languages":["Tamil","English","Urdu"]
     }
     ],
-      columns: [
+       columns: [
         { type: "dropdown", width: "80px",title:"Name", source: ["Aashiq","Muhsin"] },
-        { type: "text", width: "80px",title:"Role", render: "square" },
+        { type: "text", width: "140px",title:"Role", render: "square" },
         {type: "text", width: "80px",title:"Age", render: "square"},
         {type: "checkbox", width: "80px",title:"Indian", render: "square"},
-        {type: "text", width: "80px",title:"Languages", render: "square"}
+        {type: "text", width: "140px",title:"Languages", render: "square"}
       ],
       license: '39130-64ebc-bd98e-26bc4',
       minDimensions: [5,5]

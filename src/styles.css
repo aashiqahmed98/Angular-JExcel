@@ -3,6 +3,9 @@
 @import url('../node_modules/jsuites/jsuites.css'); */
 html, body { height: 100%; width: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-mat-card-title{
+span.toolbar {
     text-align: center;
-}
+    display: inline-block;
+    width: 100%;
+  }
+
