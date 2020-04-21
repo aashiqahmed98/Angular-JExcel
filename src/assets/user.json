@@ -1,0 +1,17 @@
+[{
+    "name":"Aashiq",
+    "role":"Dev",
+    "age":21,
+    "Indian":true,
+    "languages":["Tamil","English"]
+
+},
+
+{
+    "name":"Muhsin",
+    "role":"Dev-Manager",
+    "age":50,
+    "Indian":true,
+    "languages":["Tamil","English","Urdu"]
+}
+]
