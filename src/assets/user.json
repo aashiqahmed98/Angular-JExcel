@@ -1,22 +1,22 @@
 [
     {
-        "name":"",
+        
         "value":"Only laptop user"
     },
     {
-        "name":"",
+        
         "value":"Only Dektop user"
     },
     {
-            "name":"",
+            
             "value":"HVD with desktop"
     },
     {
-        "name":"",
+        
         "value":"HVD with laptop"
     },
     {
-        "name":"",
+        
         "value":"Dual assests laptop and desktop"
     }
 ]

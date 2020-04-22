@@ -15,8 +15,8 @@ export class StaticdataComponent implements OnInit {
  this.rowData=this.http.get("https://raw.githubusercontent.com/AashiqinCode/Angular-JExcel/Aashiq/src/assets/user.json");
 }
   columnDefs = [
-    {field: 'name',header:"Name",filter:true},
-    {field: 'value',header:"Value",filter:true }
+    {field: 'name',header:"Name",filter:true ,sortable:true},
+    {field: 'value',header:"Value",filter:true ,sortable:true}
 ];
 
 rowData:any;
