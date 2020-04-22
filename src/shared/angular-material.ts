@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 
 //Angular Material Components
@@ -37,44 +36,6 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 @NgModule({
-  declarations: [
-    
-  ],
-  imports: [
-   BrowserAnimationsModule,
-    MatCheckboxModule,
-    MatCheckboxModule,
-    MatButtonModule,
-    MatInputModule,
-    MatAutocompleteModule,
-    MatDatepickerModule,
-    MatFormFieldModule,
-    MatRadioModule,
-    MatSelectModule,
-    MatSliderModule,
-    MatSlideToggleModule,
-    MatMenuModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatListModule,
-    MatGridListModule,
-    MatCardModule,
-    MatStepperModule,
-    MatTabsModule,
-    MatExpansionModule,
-    MatButtonToggleModule,
-    MatChipsModule,
-    MatIconModule,
-    MatProgressSpinnerModule,
-    MatProgressBarModule,
-    MatDialogModule,
-    MatTooltipModule,
-    MatSnackBarModule,
-    MatTableModule,
-    MatSortModule,
-    MatPaginatorModule
-
-  ],
   exports:[
     BrowserAnimationsModule,
     MatCheckboxModule,
@@ -110,8 +71,5 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatPaginatorModule
 
   ],
-
-  providers: [],
-//   bootstrap: [AppComponent]
-})
+ })
 export class AngularMaterial { }

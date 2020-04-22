@@ -1,9 +1,24 @@
-<ag-grid-angular 
-    style="width: 700px; height: 400px;" 
-    class="ag-theme-alpine"
-    [rowData]="rowData | async" 
-    [columnDefs]="columnDefs">
-</ag-grid-angular>
+<mat-form-field>
+    <!-- <mat-label style="text-align: center;width:50px;">Office Assests Configuration</mat-label> -->
+    <mat-placeholder class="myclass" style="width: fit-content;">Office Assests Configuration</mat-placeholder>
+
+    <mat-select [formControl]="asset" >
+        <!-- placeholder="Office Assests Configuration" -->
+      <mat-option *ngFor="let assets of assetlist" [value]="asset">{{assets}}</mat-option>
+    </mat-select>
+  </mat-form-field> 
+  <br>
+    <div class="grid">
+    <ag-grid-angular 
+        id="myGrid"
+        style="width:100%;"
+        class="ag-theme-alpine"
+        [rowData]="rowData | async" 
+        [columnDefs]="columnDefs"
+        [domLayout]="domLayout">
+    </ag-grid-angular>
+</div>
+
 <br>
 <button mat-raised-button color="primary">Add</button> &nbsp;
 <button mat-raised-button color="primary">Delete</button> &nbsp;

@@ -6,3 +6,14 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+::ng-deep .mat-select-content{
+    width:2000px;
+    background-color: red;
+    font-size: 10px;   
+}
+.myclass {
+    /* color: red; */
+    width:110px;
+    font-size:15px;
+   }

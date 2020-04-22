@@ -16,6 +16,10 @@ import { StaticdataComponent } from './staticdata/staticdata.component';
 import {AngularMaterial} from 'src/shared/angular-material';
 import { AgGridModule } from 'ag-grid-angular';
 import {HttpClientModule} from '@angular/common/http';
+
+
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +38,9 @@ import {HttpClientModule} from '@angular/common/http';
     MatListModule,
     AngularMaterial,
     AgGridModule.withComponents([]),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [],
