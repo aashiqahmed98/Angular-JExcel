@@ -1,6 +1,6 @@
 <mat-form-field>
     <!-- <mat-label style="text-align: center;width:50px;">Office Assests Configuration</mat-label> -->
-    <mat-placeholder class="myclass" style="width: fit-content;">Office Assests Configuration</mat-placeholder>
+    <mat-placeholder class="myclass">Office Assests Configuration</mat-placeholder>
 
     <mat-select [formControl]="asset" >
         <!-- placeholder="Office Assests Configuration" -->
@@ -11,7 +11,7 @@
     <div class="grid">
     <ag-grid-angular 
         id="myGrid"
-        style="width:100%;"
+        style="width:300px;"
         class="ag-theme-alpine"
         [rowData]="rowData | async" 
         [columnDefs]="columnDefs"

@@ -21,7 +21,7 @@ export class StaticdataComponent implements OnInit {
   assetlist: string[] = ['Number of screens', 'Processing capacity above 8 GB ram', 'WFH Option', 'All Applications Whitelisted', 'Ethernet Cable', 'Stable Broadband connection'];
 
   columnDefs = [
-    {field: 'value',header:"Value",filter:true ,sortable:true,width:400}
+    {field: 'value',header:"Value",filter:true ,sortable:true,width:300}
   ];
   
 
