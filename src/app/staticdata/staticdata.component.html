@@ -1,14 +1,25 @@
 <mat-form-field>
     <!-- <mat-label style="text-align: center;width:50px;">Office Assests Configuration</mat-label> -->
     <mat-placeholder class="myclass">Office Assests Configuration</mat-placeholder>
-
-    <mat-select [formControl]="asset" >
-        <!-- placeholder="Office Assests Configuration" -->
-      <mat-option *ngFor="let assets of assetlist" [value]="asset">{{assets}}</mat-option>
+    <mat-select [formControl]="asset" [(ngModel)]="selectedasset">
+      <mat-option *ngFor="let assets of assetlist" [value]="assets">{{assets}}</mat-option>
     </mat-select>
   </mat-form-field> 
+  
+      <mat-form-field style="margin-left: 150px;">
+          <mat-placeholder class="myclass">To add...</mat-placeholder>
+          <input matInput>
+        </mat-form-field>
+        &nbsp;
+        
+        <button mat-raised-button color="primary">Add</button> &nbsp;
+        <button mat-raised-button color="primary">Delete</button> 
+        
+
   <br>
+
     <div class="grid">
+    <input matinput value={{selectedasset}} style="width:300px;height: 25px;font-size: medium;">
     <ag-grid-angular 
         id="myGrid"
         style="width:300px;"

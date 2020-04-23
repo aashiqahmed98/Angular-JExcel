@@ -17,11 +17,13 @@ export class StaticdataComponent implements OnInit {
     
  this.rowData=this.http.get("https://raw.githubusercontent.com/AashiqinCode/Angular-JExcel/Aashiq/src/assets/user.json");
 }
+
+  selectedasset:String;
   asset = new FormControl();
   assetlist: string[] = ['Number of screens', 'Processing capacity above 8 GB ram', 'WFH Option', 'All Applications Whitelisted', 'Ethernet Cable', 'Stable Broadband connection'];
 
   columnDefs = [
-    {field: 'value',header:"Value",filter:true ,sortable:true,width:300}
+    {field: 'value',header:"Value",filter:true ,sortable:true,width:300,editable:true}
   ];
   
 

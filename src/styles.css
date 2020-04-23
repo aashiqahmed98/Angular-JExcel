@@ -13,3 +13,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     width:110px;
     font-size:15px;
    }
+
+   div.input{
+       /* padding-right: 10px; */
+   }
+
+   div.grid{
+       margin-top: 40px;
+   }
