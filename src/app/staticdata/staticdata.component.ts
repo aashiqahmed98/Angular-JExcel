@@ -9,9 +9,9 @@ import {FormControl} from '@angular/forms';
 })
 export class StaticdataComponent implements OnInit {
 
-  constructor(private http:HttpClient) { }
-  
-  
+ 
+  constructor(private http:HttpClient) {}    
+   
   ngOnInit(): void {
    
     
@@ -25,10 +25,6 @@ export class StaticdataComponent implements OnInit {
   columnDefs = [
     {field: 'value',header:"Value",filter:true ,sortable:true,width:300,editable:true}
   ];
-  
-
-domLayout='autoHeight' //Auto-Height of rows
-
-rowData:any;
-
+  rowData:any;
+  domLayout='autoHeight' //Auto-Height of rows
 }
