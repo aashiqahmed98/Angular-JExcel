@@ -11,7 +11,7 @@ export class StaticdataComponent implements OnInit {
 public rowModelType;
 private gridApi; 
   constructor(private http:HttpClient) {
-  this.rowModelType='serverSide';   
+  // this.rowModelType='serverSide';   
   }    
    
   ngOnInit(): void {
