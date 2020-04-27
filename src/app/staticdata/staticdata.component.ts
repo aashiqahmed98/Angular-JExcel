@@ -8,9 +8,11 @@ import {FormControl} from '@angular/forms';
   styleUrls: ['./staticdata.component.css']
 })
 export class StaticdataComponent implements OnInit {
-
- 
-  constructor(private http:HttpClient) {}    
+public rowModelType;
+private gridApi; 
+  constructor(private http:HttpClient) {
+  this.rowModelType='serverSide';   
+  }    
    
   ngOnInit(): void {
    
@@ -27,4 +29,12 @@ export class StaticdataComponent implements OnInit {
   ];
   rowData:any;
   domLayout='autoHeight' //Auto-Height of rows
+
+  // Adding a row on Grid
+  gridrowadd(){
+    var selectedRows = this.gridApi.getSelectedNodes();
+    if (!selectedRows || selectedRows.length === 0) {
+      return;
+    }
+  }
 }

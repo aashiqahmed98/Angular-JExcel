@@ -2,6 +2,7 @@
     <!-- <mat-label style="text-align: center;width:50px;">Office Assests Configuration</mat-label> -->
     <mat-placeholder class="myclass">Office Assests Configuration</mat-placeholder>
     <mat-select [formControl]="asset" [(ngModel)]="selectedasset">
+      <!-- Data source -->
       <mat-option *ngFor="let assets of assetlist" [value]="assets">{{assets}}</mat-option>
     </mat-select>
   </mat-form-field> 
@@ -28,11 +29,12 @@
         [columnDefs]="columnDefs"
         [domLayout]="domLayout"
        rowSelection="multiple"
-        >
+       >
     </ag-grid-angular>
 </div>
+<!-- [rowModelType]="rowModelType"  -->
 
 <br>
-<button mat-raised-button color="primary">Add</button> &nbsp;
+<button mat-raised-button color="primary" (click)="gridrowadd()">Add</button> &nbsp;
 <button mat-raised-button color="primary">Delete</button> &nbsp;
 <button mat-raised-button color="primary">Save</button> &nbsp;
