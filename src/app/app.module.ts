@@ -19,12 +19,16 @@ import {HttpClientModule} from '@angular/common/http';
 
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ColumntypeComponent } from './columntype/columntype.component';
+import { ColumnsComponent } from './columns/columns.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SideNavComponent,
-    StaticdataComponent
+    StaticdataComponent,
+    ColumntypeComponent,
+    ColumnsComponent
   ],
   imports: [
     BrowserModule,
