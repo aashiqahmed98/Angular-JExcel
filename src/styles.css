@@ -1,9 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
-
 @import "ag-grid-community/dist/styles/ag-grid.css";
 @import "ag-grid-community/dist/styles/ag-theme-alpine.css";
-/* @import "@ag-grid-community/all-modules/dist/styles/ag-theme-fresh.css";  */
+
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -11,12 +10,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .jcontextmenu {
     display: none;
-    -webkit-user-select: none;  /* Chrome all / Safari all */
--moz-user-select: none;     /* Firefox all */
--ms-user-select: none;      /* IE 10+ */
--o-user-select: none;
-user-select: none;
-}
+    -webkit-user-select: none;
+    -moz-user-select: none;   
+    -ms-user-select: none;      
+    -o-user-select: none;
+    user-select: none;
+} 
+
+
 /* For using odd/even colors */
 .jexcel tbody tr:nth-child(even) {
     background-color: #EEE9F1 !important;

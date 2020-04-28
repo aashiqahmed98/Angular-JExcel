@@ -34,9 +34,7 @@ export class ColumnsComponent implements OnInit,AfterViewInit {
       // The source of the dropdown can also be given as a json file by using the parameter 'url'
 
         minDimensions: [7, 1],
-        contextMenu:function(){
-          return false;
-        }
+        contextMenu:function(){}
     
       });
     }
