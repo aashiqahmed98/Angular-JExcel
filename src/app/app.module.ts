@@ -21,6 +21,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ColumntypeComponent } from './columntype/columntype.component';
 import { ColumnsComponent } from './columns/columns.component';
+import {TypeCellRenderer} from './columns/type-cell-renderer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ColumnsComponent } from './columns/columns.component';
     SideNavComponent,
     StaticdataComponent,
     ColumntypeComponent,
-    ColumnsComponent
+    ColumnsComponent,
+    TypeCellRenderer
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,7 @@ import { ColumnsComponent } from './columns/columns.component';
     MatIconModule,
     MatListModule,
     AngularMaterial,
-    AgGridModule.withComponents([]),
+    AgGridModule.withComponents([TypeCellRenderer]),
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule
