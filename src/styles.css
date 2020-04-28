@@ -8,6 +8,11 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+/* For using odd/even colors */
+.jexcel tbody tr:nth-child(even) {
+    background-color: #EEE9F1 !important;
+  }
+
 div.columntypegrid{
     margin-top: 20px;
     margin-left: 10px;
@@ -19,6 +24,6 @@ div.columntypegrid{
     font-size:15px;
    }
 
-   div.grid{
+div.grid{
        margin-top: 40px;
    }
