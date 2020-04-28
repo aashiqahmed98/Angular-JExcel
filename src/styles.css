@@ -8,6 +8,15 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+
+.jcontextmenu {
+    display: none;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+-moz-user-select: none;     /* Firefox all */
+-ms-user-select: none;      /* IE 10+ */
+-o-user-select: none;
+user-select: none;
+}
 /* For using odd/even colors */
 .jexcel tbody tr:nth-child(even) {
     background-color: #EEE9F1 !important;
