@@ -23,23 +23,18 @@
 
     <div class="grid">
     <input matinput value={{selectedasset}} style="width:300px;height: 25px;font-size: medium;">
-    <ag-grid-angular 
-        id="myGrid"
-        style="width:300px;"
-        class="ag-theme-alpine"
-        [rowData]="rowData | async" 
-        [columnDefs]="columnDefs"
-        [domLayout]="domLayout"
-       rowSelection="multiple"
-       >
-    </ag-grid-angular>
+<br>
+    <div id="spreadsheet"  style="width: 300px;"></div>
+
 </div>
 <!-- [rowModelType]="rowModelType" like servertype  -->
 
 <br>
 <!-- Adding a new row in the grid -->
 <button mat-raised-button color="primary" (click)="gridrowadd()">Add</button> &nbsp; 
+
 <!-- Deleting the selected row in the grid -->
 <button mat-raised-button color="primary">Delete</button> &nbsp;
+
 <!-- Saving the changes in the grid to the server -->
 <button mat-raised-button color="primary">Save</button> 
