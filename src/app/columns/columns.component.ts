@@ -32,9 +32,8 @@ export class ColumnsComponent implements OnInit,AfterViewInit {
         { type: "dropdown", width: "200px",title:"Datasource", autocomplete:true,source:['Number of screens', 'Processing capacity above 8 GB ram', 'WFH Option', 'All Applications Whitelisted', 'Ethernet Cable', 'Stable Broadband connection'] },
         
         // The source of the dropdown can also be given as a json file by using the parameter 'url'
-        // source:['Number of screens', 'Processing capacity above 8 GB ram', 'WFH Option', 'All Applications Whitelisted', 'Ethernet Cable', 'Stable Broadband connection'] ,
         ], 
-        minDimensions: [7, 1],
+        // minDimensions: [7, 1],
         contextMenu:function(){return null;} //making the context menu as empty funciton
     
       

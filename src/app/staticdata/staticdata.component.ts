@@ -44,8 +44,7 @@ export class StaticdataComponent implements OnInit {
 
   ngAfterViewInit() {
     jexcel(document.getElementById("spreadsheet") ,{
-      // url:"https://raw.githubusercontent.com/AashiqinCode/Angular-JExcel/Aashiq/src/assets/user.json",
-              data:[['Only laptop user'],
+             data:[['Only laptop user'],
               ['Only Dektop user'],
              [ 'HVD with desktop'],
               ['HVD with laptop'],
@@ -66,6 +65,8 @@ export class StaticdataComponent implements OnInit {
 
    
   // Adding a row on Grid
-  gridrowadd(){}
+  gridrowadd(){
+    
+  }
 
 }
