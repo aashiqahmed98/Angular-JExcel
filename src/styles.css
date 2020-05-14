@@ -23,17 +23,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: #EEE9F1 !important;
   }
 
-div.columntypegrid{
+/* div.columntypegrid{
     margin-top: 20px;
     margin-left: 10px;
    
-}
+} */
 
 .myclass {
     width:110px;
     font-size:15px;
    }
 
-div.grid{
+/* div.grid{
        margin-top: 40px;
-   }
+   } */

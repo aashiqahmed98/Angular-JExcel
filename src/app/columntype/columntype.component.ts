@@ -8,13 +8,9 @@ import * as jexcel from 'jexcel';
 })
 export class ColumntypeComponent implements OnInit {
   
-  constructor() { 
-    
-  }
+  constructor() {}
   
-  ngOnInit(): void { 
-    
-   }
+  ngOnInit(): void {}
     
   ngAfterViewInit() {
     jexcel(document.getElementById("spreadsheet") ,{
